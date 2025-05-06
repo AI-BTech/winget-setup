@@ -1,0 +1,34 @@
+{
+    "$schema": "https://aka.ms/winget-settings.schema.json",
+    "visual": {
+        "progressBar": "rainbow"
+    },
+    "experimentalFeatures": {
+        "pinning": true,
+        "dependencies": true,
+        "directMSI": true,
+        "restSource": false,
+        "configuration": true
+    },
+    "installBehavior": {
+        "preferences": {
+            "scope": "user",
+            "locale": ["en-US"],
+            "architectures": ["x64", "arm64"]
+        },
+        "skipDependencies": false,
+        "disableInstallNotes": false,
+        "portablePackageUserRoot": "%LOCALAPPDATA%\\Microsoft\\WinGet\\Packages",
+        "portablePackageMachineRoot": "%PROGRAMFILES%\\WinGet\\Packages"
+    },
+    "telemetry": {
+        "disable": true
+    },
+    "network": {
+        "downloader": "default",
+        "doProgressTimeoutInSeconds": 60
+    },
+    "source": {
+        "autoUpdateIntervalInMinutes": 360
+    }
+}
